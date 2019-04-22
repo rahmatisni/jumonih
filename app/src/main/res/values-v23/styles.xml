@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="RoundElegantEdittext" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/textDarkSecondary</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@drawable/ctr_edt</item>
+        <item name="android:drawableTint">@color/semiBlack</item>
+    </style>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_transaksi"
+            android:icon="@drawable/ic_import_export_black_24dp"
+            android:title="Transaksi Tol" />
+        <item
+            android:id="@+id/nav_sharing"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="Sharing Saldo" />
+        <item
+            android:id="@+id/nav_top_up"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Top Up Saldo" />
+        <item
+            android:id="@+id/nav_riwayat"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Riwayat Transaksi" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Info Tol" />
+        <item
+            android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Edit User" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+    </group>
+
+</menu>

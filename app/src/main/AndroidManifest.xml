@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ib.ganz.etoll">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".manager.AppQu"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginRegisteActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.TopUpActivity" />
+        <activity android:name=".activity.SharingActivity" />
+        <activity android:name=".activity.RiwayatActivity" />
+        <activity android:name=".activity.IpActivity" />
+
+        <activity
+            android:name=".Transaksi.ui.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Transaksi.ui.NewProjectActivity"
+            android:label="@string/new_project" />
+        <activity
+            android:name=".Transaksi.ui.ProjectDetailActivity"
+            android:label="@string/project_detail" />
+        <activity
+            android:name=".Transaksi.ui.AddOrEditAccessPointActivity"
+            android:label="@string/add_access_point" />
+        <activity
+            android:name=".Transaksi.ui.SearchWifiAccessPointActivity"
+            android:label="@string/add_access_point" />
+        <activity
+            android:name=".Transaksi.ui.AddOrEditReferencePointActivity"
+            android:label="@string/add_reference_point" />
+        <activity
+            android:name=".Transaksi.ui.LocateMeActivity"
+            android:label="@string/locate_me" />
+        <activity android:name=".Transaksi.ui.UnifiedNavigationActivity"
+            android:label="Settings" />
+
+        <service android:name=".Transaksi.core.WifiService" />
+    </application>
+
+</manifest>
