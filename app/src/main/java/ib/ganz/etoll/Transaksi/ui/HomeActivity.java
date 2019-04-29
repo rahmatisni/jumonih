@@ -1,5 +1,6 @@
 package ib.ganz.etoll.Transaksi.ui;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,11 +20,16 @@ import ib.ganz.etoll.Transaksi.adapter.ProjectsListAdapter;
 import ib.ganz.etoll.Transaksi.model.IndoorProject;
 import ib.ganz.etoll.Transaksi.utils.RecyclerItemClickListener;
 
+import ib.ganz.etoll.activity.RiwayatActivity;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener, RecyclerItemClickListener.OnItemClickListener {
+
+    public static void go(Context c) {
+        c.startActivity(new Intent(c, HomeActivity.class));
+    }
 
     private Realm realm;
     private RealmResults<IndoorProject> projects;
@@ -36,6 +42,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initUI();
+        Realm.init(this);
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder().build();
         // Create a new empty instance of Realm
 
@@ -69,7 +76,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.settings:
                 Intent intent = new Intent(this, UnifiedNavigationActivity.class);
                 startActivity(intent);
@@ -93,7 +100,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-        mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this,mRecyclerView, this));
+        mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this, mRecyclerView, this));
     }
 
     @Override

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ib.ganz.etoll.R;
+import ib.ganz.etoll.Transaksi.ui.HomeActivity;
 import ib.ganz.etoll.dataclass.MemberData;
 import ib.ganz.etoll.helper.Utilz;
 import ib.ganz.etoll.manager.DialogManager;
@@ -60,7 +61,7 @@ public class MainActivity extends BaseActivity
         bTopUp.setOnClickListener(x -> TopUpActivity.go(a));
         bSharing.setOnClickListener(x -> SharingActivity.go(a));
         bRiwayat.setOnClickListener(x -> RiwayatActivity.go(a));
-//        bTransaksi.setOnClickListener(x -> TransaksiActivty.go(a));
+        bTransaksi.setOnClickListener(x -> HomeActivity.go(a));
     }
 
     @Override
