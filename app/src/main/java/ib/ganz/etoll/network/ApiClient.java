@@ -28,7 +28,7 @@ import retrofit2.Retrofit;
 public class ApiClient
 {
     //    public static String IP = "http://192.168.0.141/";
-    public static String IP = "http://192.168.1.13/";
+    public static String IP = "http://192.168.1.6/";
     private static String BASE_URL = IP + "etoll/api/";
     public static String IMG_DIR = IP + "etoll/admin/images/";
 

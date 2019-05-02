@@ -6,6 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
 
     <application
         android:name=".manager.AppQu"
@@ -42,34 +46,27 @@
             tools:ignore="InnerclassSeparator"></activity>
         <activity
             android:name=".Transaksi.ui.NewProjectActivity"
-            android:label="@string/new_project"
-            tools:ignore="InnerclassSeparator" />
+            android:label="@string/new_project" />
         <activity
             android:name=".Transaksi.ui.ProjectDetailActivity"
-            android:label="@string/project_detail"
-            tools:ignore="InnerclassSeparator" />
+            android:label="@string/project_detail" />
         <activity
             android:name=".Transaksi.ui.AddOrEditAccessPointActivity"
-            android:label="@string/add_access_point"
-            tools:ignore="InnerclassSeparator" />
+            android:label="@string/add_access_point" />
         <activity
             android:name=".Transaksi.ui.SearchWifiAccessPointActivity"
-            android:label="@string/add_access_point"
-            tools:ignore="InnerclassSeparator" />
+            android:label="@string/add_access_point" />
         <activity
             android:name=".Transaksi.ui.AddOrEditReferencePointActivity"
-            android:label="@string/add_reference_point"
-            tools:ignore="InnerclassSeparator" />
+            android:label="@string/add_reference_point" />
         <activity
             android:name=".Transaksi.ui.LocateMeActivity"
-            android:label="@string/locate_me"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name=".Transaksi.ui.UnifiedNavigationActivity"
-            android:label="Settings"
-            tools:ignore="InnerclassSeparator" />
+            android:label="@string/locate_me" />
+        <activity android:name=".Transaksi.ui.UnifiedNavigationActivity"
+            android:label="Settings" />
 
         <service android:name=".Transaksi.core.WifiService" />
+
     </application>
 
 </manifest>
